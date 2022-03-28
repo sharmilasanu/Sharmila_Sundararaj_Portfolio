@@ -52,10 +52,6 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click',toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
@@ -75,7 +71,12 @@ letswiper = new Swiper('.portfolio__container', {
     keyboard: true,
   });
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== CONTACT Section ====================*/
+function sendmessage() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -114,5 +115,3 @@ function scrollUp(){
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
-/*==================== DARK LIGHT THEME ====================*/ 
