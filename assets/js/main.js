@@ -72,10 +72,22 @@ letswiper = new Swiper('.portfolio__container', {
   });
 
 /*==================== CONTACT Section ====================*/
+
 function sendmessage() {
+    let validateForm = false;
+    let email = document.getElementById("contact__email").value
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.match(mailformat)){
+        validateForm = true;
+    }
+    if(validateForm){
     var x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    else{
+
+    }
 }
 
 
