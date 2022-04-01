@@ -821,6 +821,7 @@ bullet-active {
 
   .nav__list {
     display: flex;
+    font-size:var(--normal-font-size)
   }
   .home__container {
     row-gap: 5rem;
