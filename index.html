@@ -33,11 +33,7 @@
                      <i class="uil uil-file-alt nav__icon"></i>Skills
                      </a>
                   </li>
-                  <li class="nav__item">
-                     <a href="#services" class="nav__link">
-                     <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                     </a>
-                  </li>
+                 
                   <li class="nav__item">
                      <a href="#portfolio" class="nav__link">
                      <i class="uil uil-scenery nav__icon"></i> Portfolio
@@ -48,6 +44,8 @@
                      <i class="uil uil-message nav__icon"></i> Contact Me
                      </a>
                   </li>
+                 
+                  
                </ul>
                <i class="uil uil-times nav__close" id = "nav-close"></i>
             </div>
@@ -88,7 +86,7 @@
                               165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                               129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                               -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                           <image class = "home__blob-img"  x='12' y='18' href="assets/img/Sharmila_photo.png"/>
+                           <image class = "home__blob-img"  x='12' y='35' href="assets/img/Sharmila_Sundararaj.png"/>
                         </g>
                      </svg>
                   </div>
@@ -117,9 +115,12 @@
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
             <div class="about__container container grid">
-               <img src="" alt="" class="about__img">
                <div class="about__data">
-                  <p class="about__description"> Basically from India possessing work experience for few years in Frontend Web development. Then i did extend my Technical skillset after moving to Germany through a Scholarship Course in Backend development . As part of the Course i had hands on experience working  in Various Projects, which can be found below for display.   </p>
+                  <p class="about__description"> Basically from India possessing work experience for few years in Frontend Web development. After moving to Germany, I expanded my skills in full-stack development by taking a Vocational Course.
+                     Through this course I got hands-on experience by working on active projects with programming skills that are
+                     trending like React, React Native, Angular and development approaches (TDD and BDD) and documentation. I
+                     am motivated to make a re-entry into the industry by providing development services with the knowledge I
+                     have gained. As part of the Course i had hands on experience working  in Various Projects, which can be found below for display.   </p>
                   <div class="about__info">
                     <!--<div>
                         <span class="about__info-title">02</span>
@@ -135,7 +136,7 @@
                      </div>
                   </div>--> 
                   <div class="about__buttons">
-                     <a download ="" href="assets/pdf/Sharmila_Sundararaj_CV.pdf" class="button button--flex">
+                     <a download ="" href="assets/pdf/Sharmila_Sundararaj_Resume.pdf" class="button button--flex">
                      Download CV<i class="uil uil-import button__icon"></i>
                      </a>
                   </div>
@@ -520,15 +521,15 @@
                   <div class="contact__inputs grid">
                      <div class="contact__content">
                         <label for="" class="contact__label">Name</label>
-                        <input name= "name" type="text" class="contact__input" required>
+                        <input id="contact__name" name= "name" type="text" class="contact__input" required>
                      </div>
                      <div class="contact__content">
                         <label for="" class="contact__label">Email</label>
-                        <input name ="email" type="email" class="contact__input" required>
+                        <input id="contact__email" name ="email" type="email" class="contact__input" required>
                      </div>
                      <div class="contact__content">
                         <label for="" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
+                        <textarea name="message" id="contact__message" cols="0" rows="7" class="contact__input" required></textarea>
                      </div> 
                      <div>
                         
@@ -550,8 +551,8 @@
          <!--==================== SNACKBAR ====================-->
          <div id="snackbar">Thanks for Contacting😀.</div>
       </main>
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
+     <!-- ==================== FOOTER ====================-->
+     <!-- <footer class="footer">
          <div class="footer__bg">
             <div class="footer__container container.grid">
                <div>
@@ -584,7 +585,7 @@
                </div>
             </div>
          </div>
-      </footer>
+      </footer>-->
 
          <!--==================== SCROLL TOP ====================-->
       <a href="#" class="scrollup" id="scroll-up">
