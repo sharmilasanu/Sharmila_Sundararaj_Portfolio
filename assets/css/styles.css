@@ -341,6 +341,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.submit-btn{
+  border : 0 1px var(--first-color)
+}
 /*==================== ABOUT ====================*/
 
 .about__description {
